@@ -45,11 +45,25 @@ public class Board {// ver aqui em caso de algum erro(final)
         piece.position = position;
     }
 
+    public Piece removePiece(Position position) {
+        if (!positionExists(position)) {
+            throw new BoardException("Position not on the board");
+        }
+        if (piece(position) == null) {
+            return null;
+        }
+        Piece aux = piece(position);
+        aux.position = null;
+        pieces[position.getRow()][position.getColumn()] = null;
+        return aux;
+    }
+
     private boolean positionExists(int row, int column) {
         return row >= 0 && row < rows && column >= 0 && column < columns;
     }
 
-    public boolean positionExists(Position position) {// não daria pra botar o metodo com outro nome para não confundir?
+    public boolean positionExists(Position position) {// não daria pra botar o metodo com outro nome para não
+                                                      // confundir?ou é sobrecarga?
         return positionExists(position.getRow(), position.getColumn());
 
     }
