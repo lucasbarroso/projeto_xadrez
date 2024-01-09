@@ -1,0 +1,3 @@
+Ainda vou voltar aqui para terminar esse projeto, porém a partir do ponto das aulas que parei  de implementar o projeto, não vi mais motivo para 
+continuar dado que minha principal duvida neste projeto era saber as responsabilidade das classes e entender a estrutura.
+Com intuito de adiantar o tempo das semanas, vou precisar acelerar o andamento do conteudo do path de java.
